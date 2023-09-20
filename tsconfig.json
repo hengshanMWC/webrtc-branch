@@ -1,0 +1,19 @@
+{
+  "exclude": ["node_modules", "**/dist"],
+  "compilerOptions": {
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "declaration": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "noImplicitAny": false,
+    "noEmitOnError": true,
+    "noUnusedLocals": false,
+    "strictNullChecks": true,
+    "resolveJsonModule": true,
+    "experimentalDecorators": true,
+    "target": "esnext",
+    "lib": ["DOM", "ES2020"],
+    "downlevelIteration": true
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "@abmao/magic-webrtc-screen-share",
+  "version": "0.1.0",
+  "description": "发送端屏幕共享",
+  "author": "mawencan",
+  "license": "ISC",
+  "repository": "git@gitlab.gz.cvte.cn:sys_design_supply/abmao-magic-webrtc.git",
+  "keywords": [
+    "webrtc",
+    "screen-share"
+  ],
+  "main": "dist/screen-share.umd.js",
+  "module": "dist/screen-share.mjs",
+  "types": "typings",
+  "files": [
+    "dist",
+    "typings",
+    "README.md",
+    "src",
+    "index.ts"
+  ],
+  "scripts": {
+    "type": "tsc --emitDeclarationOnly --declarationDir typings",
+    "build": "vite build && npm run type"
+  },
+  "dependencies": {
+    "@abmao/magic-webrtc": "workspace:0.1.0"
+  }
+}

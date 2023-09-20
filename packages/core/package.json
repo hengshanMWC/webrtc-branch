@@ -1,0 +1,33 @@
+{
+  "name": "@abmao/magic-webrtc",
+  "version": "0.1.0",
+  "description": "海外WebRTC投屏/控屏SDK",
+  "author": "wuhaopei",
+  "license": "ISC",
+  "repository": "git@gitlab.gz.cvte.cn:sys_design_supply/abmao-magic-webrtc.git",
+  "main": "dist/magic-webrtc.umd.js",
+  "module": "dist/magic-webrtc.mjs",
+  "types": "typings",
+  "files": [
+    "dist",
+    "typings",
+    "README.md",
+    "src",
+    "index.ts"
+  ],
+  "scripts": {
+    "init": "rm -rf node_modules && yarn install && yarn run clean && yarn run bootstrap",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --config ./config/webpack.dev.js",
+    "update-version": "node scripts/version.js",
+    "type": "tsc --emitDeclarationOnly --declarationDir typings",
+    "build": "vite build && npm run type"
+  },
+  "dependencies": {
+    "lodash.merge": "^4.6.2",
+    "simple-peer": "^9.11.1"
+  },
+  "devDependencies": {
+    "@types/simple-peer": "^9.11.4"
+  },
+  "gitHead": "7de67f4d9e187c59b3ff6631296355882bdd1af7"
+}

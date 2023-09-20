@@ -1,0 +1,33 @@
+{
+  "name": "@abmao/magic-webrtc-send-file",
+  "version": "0.1.6",
+  "description": "发送端文件传输",
+  "author": "mawencan",
+  "license": "ISC",
+  "repository": "git@gitlab.gz.cvte.cn:sys_design_supply/abmao-magic-webrtc.git",
+  "keywords": [
+    "webrtc",
+    "file"
+  ],
+  "main": "dist/send-file.umd.js",
+  "module": "dist/send-file.mjs",
+  "types": "typings",
+  "files": [
+    "dist",
+    "typings",
+    "README.md",
+    "src",
+    "index.ts"
+  ],
+  "scripts": {
+    "type": "tsc --emitDeclarationOnly --declarationDir typings",
+    "build": "vite build && npm run type"
+  },
+  "dependencies": {
+    "@abmao/magic-webrtc": "workspace:0.1.0",
+    "spark-md5": "^3.0.2"
+  },
+  "devDependencies": {
+    "@types/spark-md5": "^3.0.2"
+  }
+}
